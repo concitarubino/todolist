@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+    <main>
+        <section id="to-do-app">
+            <div id="filters">
+                <select id="filter-tasks">
+                    <option value="all">Tutte</option>
+                    <option value="completed">Completate</option>
+                    <option value="uncompleted">Non Completate</option>
+                </select>
+            </div>            
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Aggiungi una nuova attività..." required>
+                <button type="submit">Aggiungi</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

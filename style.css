@@ -1,0 +1,120 @@
+/* Generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Intestazione */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Sezione To-Do */
+#to-do-app {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#filters {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#filter-tasks {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+#task-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#task-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-form button {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background: #0056b3;
+}
+
+/* Lista delle attività */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#task-list li {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex; /* Abilita il layout flessibile */
+    justify-content: space-between; /* Spaziatura tra il testo e i pulsanti */
+    align-items: center; /* Allinea verticalmente pulsanti e testo */
+}
+
+#task-list li div {
+    display: flex; /* Allinea i pulsanti orizzontalmente */
+    gap: 0.3rem; /* Spaziatura tra ✔️ e ❌ */
+}
+
+#task-list li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem; /* Dimensione uniforme per le icone */
+    display: flex; /* Per centrare le icone */
+    align-items: center;
+    justify-content: center;
+}
+
+#task-list li button.complete i {
+    color: #4caf50; /* Verde */
+    transition: color 0.3s ease;
+}
+
+#task-list li button.complete i:hover {
+    color: #388e3c; /* Verde scuro */
+}
+
+#task-list li button.delete i {
+    color: #ff6b6b; /* Rosso */
+    transition: color 0.3s ease;
+}
+
+#task-list li button.delete i:hover {
+    color: #ff4c4c; /* Rosso scuro */
+}
